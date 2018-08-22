@@ -71,6 +71,7 @@ section.calendar .item .game{
 
     background-position: center;
     background-size: cover;
+    background-color: #ccc9d0;
 }
 section.calendar .item.featured .game{
     width: 440px;
@@ -124,4 +125,11 @@ section.calendar .item .schedule .time:nth-child(even){
 }
 section.calendar .item .schedule .time span{
     width: 100%;
+}
+
+section.calendar .item.disabled{
+    opacity: 0.5;
+}
+section.calendar .item.disabled .game{
+    -webkit-filter: grayscale(1);
 }
