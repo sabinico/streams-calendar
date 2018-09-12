@@ -1,7 +1,7 @@
 html{
     width: 1200px;
     margin: 0 auto;
-    border: 1px solid red;
+    border: 1px solid #ccc9d0;
 }
 body {
     margin: 0;
@@ -42,6 +42,20 @@ section.calendar{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    position: relative;
+}
+
+section.calendar::after{
+    content: "";
+    background: #FFF url('../img/background.jpg');
+    opacity: 0.45;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
 }
 
 section.calendar .item{
@@ -75,6 +89,20 @@ section.calendar .item .game{
 }
 section.calendar .item.featured .game{
     width: 440px;
+}
+section.calendar .item .game .logo{
+    position: absolute;
+    bottom: 20px;
+    right: 25%;
+    width: 100px;
+}
+section.calendar .item.featured .game .logo{
+    bottom: 40px;
+    right: 34%;
+    width: 140px;
+}
+section.calendar .item .game .logo img{
+    width: 100%;
 }
 section.calendar .item .game .caption{
     display: flex;

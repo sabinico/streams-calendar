@@ -25,20 +25,14 @@
 <section class="calendar">
 
     <?php
-    $items = [
-        ['weekday' => 'Monday 20', 'game' => 'Dead by Daylight - BBQ EVENT', 'img' => 'img/dbd_bbq.jpg', 'disabled' => true],
-        ['weekday' => 'Tuesday 21', 'game' => 'Dead by Daylight - BBQ EVENT', 'img' => 'img/dbd.png', 'disabled' => true],
-        ['weekday' => 'Wednesday 22', 'game' => 'Dead by Daylight - BBQ EVENT', 'img' => 'img/dbd.jpeg'],
-        ['weekday' => 'Thursday 23', 'game' => 'Dead by Daylight - BBQ EVENT', 'img' => 'img/dbd_dwights.jpeg'],
-        ['weekday' => 'Friday 24', 'game' => 'Dead by Daylight - BBQ EVENT'],
-        ['weekday' => 'Saturday 25', 'game' => 'Alien Isolation - DAY 3', 'featured' => true, 'start' => '20:00', 'img' => 'img/alien.png'],
-        ['weekday' => 'Sunday 26', 'game' => 'Alien Isolation - DAY 4', 'featured' => true, 'start' => '20:00', 'img' => 'img/alien_2.jpg'],
-    ];
+    include 'calendar.php';
+    
     foreach ($items as $item):
     ?>
     <article class="item <?= @$item['featured']?'featured':''; ?> <?= @$item['disabled']?'disabled':''; ?>">
         <div class="weekday"><?= $item['weekday']; ?></div>
         <div class="game" style="background-image: url('<?= @$item['img']?$item['img']:'img/dbd_dwight.jpg'; ?>');">
+            <div class="logo"><img src="<?= $item['logo']; ?>" /></div>
             <div class="caption"><span><?= $item['game']; ?></span></div>
         </div>
         <div class="schedule">
