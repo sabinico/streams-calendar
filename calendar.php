@@ -1,50 +1,62 @@
 <?php
 $items = [
     [
-        'weekday' => 'Monday 03',
+        'weekday' => 'Monday 17',
         'game' => 'Dead by Daylight',
-        'img' => 'img/dbd_2.jpg',
+        'img' => 'img/dbd_dwight.jpg',
         'logo' => 'img/logo_dbd.png',
+        'start' => '19:00',
+        'end' => '21:30',
         'disabled' => true
     ],
     [
-        'weekday' => 'Tuesday 04',
+        'weekday' => 'Tuesday 18',
         'game' => 'Dead by Daylight',
         'img' => 'img/dbd_3.jpg',
         'logo' => 'img/logo_dbd.png',
-        'disabled' => true
+        'start' => '19:00',
+        'end' => '21:30',
+        'disabled' => false
     ],
     [
-        'weekday' => 'Wednesday 05',
-        'game' => 'World of Warcraft - MYTHIC+',
-        'img' => 'img/wow_uldir.jpg',
+        'weekday' => 'Wednesday 19',
+        'game' => 'World of Warcraft - RAIDS',
+        'img' => 'img/wow_raid.jpg',
         'logo' => 'img/logo_wow.png',
-        'disabled' => true
+        'start' => '19:00',
+        'end' => '00:00',
+        'disabled' => false
     ],
     [
-        'weekday' => 'Thursday 06',
+        'weekday' => 'Thursday 20',
         'game' => 'Dead by Daylight - SWF',
-        'img' => 'img/dbd_swf.jpeg',
+        'img' => 'img/dbd_group.jpg',
         'logo' => 'img/logo_dbd.png',
+        'start' => '19:00',
+        'end' => '21:30',
         'disabled' => false
     ],
     [
-        'weekday' => 'Friday 07',
-        'game' => 'Raft - DAY 2',
-        'img' => 'img/raft.jpg',
-        'logo' => 'img/logo_raft.png',
+        'weekday' => 'Friday 21',
+        'game' => 'Dead by Daylight - Killer',
+        'img' => 'img/dbd_1.jpg',
+        'logo' => 'img/logo_dbd.png',
+        'start' => '19:00',
+        'end' => '21:30',
         'disabled' => false
     ],
-    ['weekday' => 'Saturday 08',
-        'game' => 'Alien Isolation - DAY 4',
-        'featured' => true, 'start' => '20:00',
+    [
+        'weekday' => 'Saturday 22',
+        'game' => 'Alien Isolation - DAY 5',
+        'featured' => true,
+        'start' => '20:00',
         'img' => 'img/alien_2.png',
         'logo' => 'img/logo_alien.png',
         'disabled' => false
     ],
     [
-        'weekday' => 'Sunday 09',
-        'game' => 'Subnautica - DAY 2',
+        'weekday' => 'Sunday 23',
+        'game' => 'Subnautica - DAY 3',
         'featured' => true,
         'start' => '20:00',
         'img' => 'img/subnautica.webp',
